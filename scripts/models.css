@@ -1,0 +1,160 @@
+.models-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2.5rem;
+}
+
+.models-hero {
+    margin-bottom: 2.5rem;
+}
+
+.models-hero h1 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #f0ede8;
+}
+
+.models-hero h1 span {
+    color: #c0392b;
+}
+
+.models-hero p {
+    color: #888;
+    font-size: 0.95rem;
+    margin-top: 0.4rem;
+    letter-spacing: 0.05em;
+}
+
+/* ── Filter bar ── */
+.filter-bar {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.filter-btn {
+    background: transparent;
+    border: 1.5px solid #333;
+    color: #888;
+    padding: 0.4rem 1.1rem;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s;
+    clip-path: polygon(6px 0%, 100% 0%, calc(100% - 6px) 100%, 0% 100%);
+}
+
+.filter-btn:hover {
+    border-color: #c0392b;
+    color: #fff;
+}
+
+.filter-btn.active {
+    background: #c0392b;
+    border-color: #c0392b;
+    color: #fff;
+}
+
+/* ── Category sections ── */
+.model-category {
+    margin-bottom: 3.5rem;
+}
+
+.model-category.hidden {
+    display: none;
+}
+
+.category-title {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #c0392b;
+    border-bottom: 1px solid #222;
+    padding-bottom: 0.6rem;
+    margin-bottom: 1.5rem;
+}
+
+/* ── Model grid ── */
+.model-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.model-card {
+    background: #141414;
+    border: 1px solid #222;
+    padding: 1.25rem 1.5rem;
+    position: relative;
+    transition: border-color 0.2s, transform 0.2s;
+    cursor: pointer;
+}
+
+.model-card:hover {
+    border-color: #c0392b;
+    transform: translateY(-3px);
+}
+
+.model-year {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    color: #c0392b;
+    margin-bottom: 0.4rem;
+}
+
+.model-card h3 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #f0ede8;
+    margin-bottom: 0.4rem;
+}
+
+.model-card p {
+    font-size: 0.8rem;
+    color: #888;
+    line-height: 1.5;
+}
+
+.model-card .card-arrow {
+    display: block;
+    margin-top: 1rem;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #c0392b;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.model-card:hover .card-arrow {
+    opacity: 1;
+}
+.brand-divider {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--text);
+    border-left: 4px solid var(--accent);
+    padding-left: 1rem;
+    margin: 3rem 0 2rem;
+}
+
+.brand-divider:first-of-type {
+    margin-top: 0;
+}

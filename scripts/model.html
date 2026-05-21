@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Model — CarDetails</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="model.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="top-bar">New 2026 models now available &nbsp;|&nbsp; Free shipping on orders over €500</div>
+    <div class="header-inner">
+        <div class="logo">
+            <div class="logo-emblem"><span>CD</span></div>
+            <div class="logo-text">
+                <span class="brand">CarDetails</span>
+                <span class="tagline">Performance · Precision · Power</span>
+            </div>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="models.html">Models</a>
+            <a href="#">Compare</a>
+            <a href="#">Specs</a>
+            <a href="#">About</a>
+        </nav>
+        <div class="header-actions">
+            <button class="cta-btn">View Cars</button>
+        </div>
+    </div>
+</header>
+
+<main class="model-detail-page">
+    <a href="models.html" class="back-link">← Back to Models</a>
+
+    <div class="model-detail-hero">
+        <div class="model-detail-year" id="detail-year"></div>
+        <h1 id="detail-name"></h1>
+        <div class="model-detail-category" id="detail-category"></div>
+    </div>
+
+    <div class="model-detail-body">
+        <div class="detail-overview">
+            <h2>Overview</h2>
+            <p id="detail-overview"></p>
+        </div>
+        <div class="detail-highlights">
+            <h2>Highlights</h2>
+            <ul id="detail-highlights"></ul>
+        </div>
+    </div>
+</main>
+
+<script src="main.js"></script>
+<script src="cardata.js"></script>
+<script src="model.js"></script>
+
+</body>
+</html>

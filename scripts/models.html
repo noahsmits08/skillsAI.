@@ -2,15 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>CarDetails</title>
+    <title>Models — CarDetails</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="models.css">
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -26,7 +20,7 @@
             </div>
         </div>
         <nav>
-            <a href="main.html" class="active">Home</a>
+            <a href="main.html">Home</a>
             <a href="models.html">Models</a>
             <a href="#">Compare</a>
             <a href="#">Specs</a>
@@ -37,8 +31,628 @@
         </div>
     </div>
 </header>
+
+<main class="models-page">
+    <div class="models-hero">
+        <h1>All Models <span>2022 – 2026</span></h1>
+        <p>Browse the full lineup by brand and category</p>
+    </div>
+
+    <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="sedan">Sedans</button>
+        <button class="filter-btn" data-filter="suv">SUVs</button>
+        <button class="filter-btn" data-filter="coupe">Coupes</button>
+        <button class="filter-btn" data-filter="electric">Electric</button>
+        <button class="filter-btn" data-filter="performance">Performance</button>
+        <button class="filter-btn" data-filter="hatchback">Hatchbacks</button>
+        <button class="filter-btn" data-filter="estate">Estates</button>
+    </div>
+
+    <!-- ══════════════════════════════════════════ -->
+    <!--  BMW                                       -->
+    <!-- ══════════════════════════════════════════ -->
+
+    <div class="brand-divider">BMW</div>
+
+    <section class="model-category" data-category="sedan">
+        <h2 class="category-title">Sedans</h2>
+        <div class="model-grid">
+            <div class="model-card" data-id="bmw-7-series-2022">
+                <div class="model-year">2022</div>
+                <h3>7 Series</h3>
+                <p>Full-size luxury flagship sedan with 48V mild hybrid</p>
+            </div>
+            <div class="model-card" data-id="bmw-3-series-2023">
+                <div class="model-year">2023</div>
+                <h3>3 Series</h3>
+                <p>Compact executive sedan, refreshed for 2023</p>
+            </div>
+            <div class="model-card" data-id="bmw-5-series-2024">
+                <div class="model-year">2024</div>
+                <h3>5 Series</h3>
+                <p>Mid-size executive sedan with PHEV options</p>
+            </div>
+            <div class="model-card" data-id="bmw-2-series-gran-coupe-2024">
+                <div class="model-year">2024</div>
+                <h3>2 Series Gran Coupé</h3>
+                <p>Subcompact executive fastback sedan</p>
+            </div>
+            <div class="model-card" data-id="bmw-7-series-2026">
+                <div class="model-year">2026</div>
+                <h3>7 Series</h3>
+                <p>Refreshed flagship with updated tech and powertrain</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="model-category" data-category="suv">
+        <h2 class="category-title">SUVs</h2>
+        <div class="model-grid">
+            <div class="model-card" data-id="bmw-x1-2023">
+                <div class="model-year">2023</div>
+                <h3>X1</h3>
+                <p>Subcompact luxury crossover, all-new generation</p>
+            </div>
+            <div class="model-card" data-id="bmw-x2-2024">
+                <div class="model-year">2024</div>
+                <h3>X2</h3>
+                <p>Subcompact coupe SUV, second generation</p>
+            </div>
+            <div class="model-card" data-id="bmw-x3-2024">
+                <div class="model-year">2024</div>
+                <h3>X3</h3>
+                <p>Compact luxury crossover, BMW's best-seller</p>
+            </div>
+            <div class="model-card" data-id="bmw-x5-2025">
+                <div class="model-year">2025</div>
+                <h3>X5</h3>
+                <p>Mid-size luxury SUV with exceptional versatility</p>
+            </div>
+            <div class="model-card" data-id="bmw-x6-2025">
+                <div class="model-year">2025</div>
+                <h3>X6</h3>
+                <p>Coupe-styled mid-size luxury SUV</p>
+            </div>
+            <div class="model-card" data-id="bmw-x7-2025">
+                <div class="model-year">2025</div>
+                <h3>X7</h3>
+                <p>Full-size 7-seat luxury SUV</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="model-category" data-category="coupe">
+        <h2 class="category-title">Coupes & Convertibles</h2>
+        <div class="model-grid">
+            <div class="model-card" data-id="bmw-2-series-coupe-2022">
+                <div class="model-year">2022</div>
+                <h3>2 Series Coupé</h3>
+                <p>All-new RWD compact coupe for 2022</p>
+            </div>
+            <div class="model-card" data-id="bmw-4-series-coupe-2023">
+                <div class="model-year">2023</div>
+                <h3>4 Series Coupé</h3>
+                <p>Stylish compact coupe with iconic kidney grille</p>
+            </div>
+            <div class="model-card" data-id="bmw-4-series-gran-coupe-2024">
+                <div class="model-year">2024</div>
+                <h3>4 Series Gran Coupé</h3>
+                <p>Practical liftback with coupe-like styling</p>
+            </div>
+            <div class="model-card" data-id="bmw-8-series-gran-coupe-2025">
+                <div class="model-year">2025</div>
+                <h3>8 Series Gran Coupé</h3>
+                <p>Premium 4-door coupe with V8 option</p>
+            </div>
+            <div class="model-card" data-id="bmw-z4-2026">
+                <div class="model-year">2026</div>
+                <h3>Z4</h3>
+                <p>Open-top roadster, up to 382 hp in M40i trim</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="model-category" data-category="electric">
+        <h2 class="category-title">Electric (i Series)</h2>
+        <div class="model-grid">
+            <div class="model-card" data-id="bmw-i7-2022">
+                <div class="model-year">2022</div>
+                <h3>i7</h3>
+                <p>All-electric full-size luxury sedan</p>
+            </div>
+            <div class="model-card" data-id="bmw-ix1-2022">
+                <div class="model-year">2022</div>
+                <h3>iX1</h3>
+                <p>Subcompact electric luxury crossover</p>
+            </div>
+            <div class="model-card" data-id="bmw-ix2-2023">
+                <div class="model-year">2023</div>
+                <h3>iX2</h3>
+                <p>Electric subcompact coupe SUV</p>
+            </div>
+            <div class="model-card" data-id="bmw-i4-2024">
+                <div class="model-year">2024</div>
+                <h3>i4</h3>
+                <p>Electric 4 Series Gran Coupé, up to 307 mi range</p>
+            </div>
+            <div class="model-card" data-id="bmw-i5-2024">
+                <div class="model-year">2024</div>
+                <h3>i5</h3>
+                <p>Electric mid-size executive sedan and wagon</p>
+            </div>
+            <div class="model-card" data-id="bmw-i3-neue-klasse-2026">
+                <div class="model-year">2026</div>
+                <h3>i3 (Neue Klasse)</h3>
+                <p>All-new electric sedan, up to 440 miles range</p>
+            </div>
+            <div class="model-card" data-id="bmw-ix4-2026">
+                <div class="model-year">2026</div>
+                <h3>iX4</h3>
+                <p>First-ever electric X4, part of 2026 offensive</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="model-category" data-category="performance">
+        <h2 class="category-title">M Series</h2>
+        <div class="model-grid">
+            <div class="model-card" data-id="bmw-m2-2023">
+                <div class="model-year">2023</div>
+                <h3>M2</h3>
+                <p>Compact performance coupe, last pure RWD M car</p>
+            </div>
+            <div class="model-card" data-id="bmw-m3-competition-2023">
+                <div class="model-year">2023</div>
+                <h3>M3 Competition</h3>
+                <p>High-performance sedan, optional xDrive AWD</p>
+            </div>
+            <div class="model-card" data-id="bmw-m4-competition-2023">
+                <div class="model-year">2023</div>
+                <h3>M4 Competition</h3>
+                <p>Performance coupe and convertible with xDrive</p>
+            </div>
+            <div class="model-card" data-id="bmw-m5-2025">
+                <div class="model-year">2025</div>
+                <h3>M5</h3>
+                <p>All-new high-performance PHEV mid-size sedan</p>
+            </div>
+            <div class="model-card" data-id="bmw-m2-xdrive-2025">
+                <div class="model-year">2025</div>
+                <h3>M2 xDrive</h3>
+                <p>M2 gains AWD option for broader appeal</p>
+            </div>
+            <div class="model-card" data-id="bmw-x3-m-2025">
+                <div class="model-year">2025</div>
+                <h3>X3 M</h3>
+                <p>High-performance compact SUV variant</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════ -->
+    <!--  AUDI                                      -->
+    <!-- ══════════════════════════════════════════ -->
+
+    <div class="brand-divider">Audi</div>
+
+    <section class="model-category" data-category="sedan">
+        <h2 class="category-title">Sedans</h2>
+        <div class="model-grid">
+            <div class="model-card" data-id="audi-a3-2023">
+                <div class="model-year">2023</div>
+                <h3>A3 Sedan</h3>
+                <p>Entry-level compact executive sedan, refreshed for 2023</p>
+            </div>
+            <div class="model-card" data-id="audi-a4-2023">
+                <div class="model-year">2023</div>
+                <h3>A4</h3>
+                <p>Core executive sedan with 48V mild hybrid across the range</p>
+            </div>
+            <div class="model-card" data-id="audi-a6-2023">
+                <div class="model-year">2023</div>
+                <h3>A6</h3>
+                <p>Mid-size executive sedan and Avant estate</p>
+            </div>
+            <div class="model-card" data-id="audi-a8-2024">
+                <div class="model-year">2024</div>
+                <h3>A8</h3>
+                <p>Flagship luxury sedan with predictive active suspension</p>
+            </div>
+            <div class="model-card" data-id="audi-a5-2025">
+                <div class="model-year">2025</div>
+                <h3>A5</h3>
+                <p>All-new executive sedan replacing the A4 nameplate</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="model-category" data-category="suv">
+        <h2 class="category-title">SUVs</h2>
+        <div class="model-grid">
+            <div class="model-card" data-id="audi-q3-2023">
+                <div class="model-year">2023</div>
+                <h3>Q3</h3>
+                <p>Entry-level luxury SUV with sliding rear bench</p>
+            </div>
+            <div class="model-card" data-id="audi-q5-2024">
+                <div class="model-year">2024</div>
+                <h3>Q5</h3>
+                <p>All-new third-generation mid-size luxury SUV</p>
+            </div>
+            <div class="model-card" data-id="audi-q7-2025">
+                <div class="model-year">2025</div>
+                <h3>Q7</h3>
+                <p>Large three-row luxury SUV, updated for 2025</p>
+            </div>
+            <div class="model-card" data-id="audi-q8-2025">
+                <div class="model-year">2025</div>
+                <h3>Q8</h3>
+                <p>Coupe-style flagship SUV with RS Q8 variant</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="model-category" data-category="coupe">
+        <h2 class="category-title">Coupes & Roadsters</h2>
+        <div class="model-grid">
+            <div class="model-card" data-id="audi-tt-2023">
+                <div class="model-year">2023</div>
+                <h3>TT</h3>
+                <p>Final generation of the iconic TT nameplate</p>
+            </div>
+            <div class="model-card" data-id="audi-r8-2023">
+                <div class="model-year">2023</div>
+                <h3>R8</h3>
+                <p>Last iteration of Audi's V10 mid-engine supercar</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="model-category" data-category="electric">
+        <h2 class="category-title">Electric</h2>
+        <div class="model-grid">
+            <div class="model-card" data-id="audi-e-tron-gt-2023">
+                <div class="model-year">2023</div>
+                <h3>e-tron GT</h3>
+                <p>Electric grand tourer, up to 298 miles of range</p>
+            </div>
+            <div class="model-card" data-id="audi-q4-e-tron-2023">
+                <div class="model-year">2023</div>
+                <h3>Q4 e-tron</h3>
+                <p>Mass-market electric SUV, up to 341 miles range</p>
+            </div>
+            <div class="model-card" data-id="audi-q6-e-tron-2024">
+                <div class="model-year">2024</div>
+                <h3>Q6 e-tron</h3>
+                <p>Premium electric SUV on PPE platform, 800V charging</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="model-category" data-category="performance">
+        <h2 class="category-title">RS Models</h2>
+        <div class="model-grid">
+            <div class="model-card" data-id="audi-rs3-2023">
+                <div class="model-year">2023</div>
+                <h3>RS 3</h3>
+                <p>400 hp five-cylinder compact with torque-vectoring diff</p>
+            </div>
+            <div class="model-card" data-id="audi-rs6-avant-2024">
+                <div class="model-year">2024</div>
+                <h3>RS 6 Avant</h3>
+                <p>630 hp V8 ultimate performance estate</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════ -->
+    <!--  MERCEDES-BENZ                             -->
+    <!-- ══════════════════════════════════════════ -->
+
+    <div class="brand-divider">Mercedes-Benz</div>
+
+    <section class="model-category" data-category="sedan">
+        <h2 class="category-title">Sedans</h2>
+        <div class="model-grid">
+            <div class="model-card" data-id="mercedes-a-class-2023">
+                <div class="model-year">2023</div>
+                <h3>A-Class</h3>
+                <p>Entry-level compact hatchback and sedan</p>
+            </div>
+            <div class="model-card" data-id="mercedes-c-class-2023">
+                <div class="model-year">2023</div>
+                <h3>C-Class</h3>
+                <p>Compact executive sedan with S-Class tech trickle-down</p>
+            </div>
+            <div class="model-card" data-id="mercedes-e-class-2024">
+                <div class="model-year">2024</div>
+                <h3>E-Class</h3>
+                <p>All-new executive sedan with Superscreen dashboard</p>
+            </div>
+            <div class="model-card" data-id="mercedes-s-class-2024">
+                <div class="model-year">2024</div>
+                <h3>S-Class</h3>
+                <p>Definitive flagship luxury sedan</p>
+            </div>
+            <div class="model-card" data-id="mercedes-cla-2026">
+                <div class="model-year">2026</div>
+                <h3>CLA</h3>
+                <p>All-new MMA platform, combustion and electric from launch</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="model-category" data-category="suv">
+        <h2 class="category-title">SUVs</h2>
+        <div class="model-grid">
+            <div class="model-card" data-id="mercedes-glb-2023">
+                <div class="model-year">2023</div>
+                <h3>GLB</h3>
+                <p>Compact SUV with optional seven seats</p>
+            </div>
+            <div class="model-card" data-id="mercedes-glc-2023">
+                <div class="model-year">2023</div>
+                <h3>GLC</h3>
+                <p>All-new mid-size SUV with standard mild hybrid</p>
+            </div>
+            <div class="model-card" data-id="mercedes-gle-2024">
+                <div class="model-year">2024</div>
+                <h3>GLE</h3>
+                <p>Updated large luxury SUV with optional seven seats</p>
+            </div>
+            <div class="model-card" data-id="mercedes-gls-2024">
+                <div class="model-year">2024</div>
+                <h3>GLS</h3>
+                <p>Flagship full-size three-row luxury SUV</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="model-category" data-category="coupe">
+        <h2 class="category-title">Coupes & Roadsters</h2>
+        <div class="model-grid">
+            <div class="model-card" data-id="mercedes-amg-gt-2024">
+                <div class="model-year">2024</div>
+                <h3>AMG GT</h3>
+                <p>All-new four-door grand tourer coupe</p>
+            </div>
+            <div class="model-card" data-id="mercedes-sl-2023">
+                <div class="model-year">2023</div>
+                <h3>SL</h3>
+                <p>Pure AMG soft-top roadster with optional rear seats</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="model-category" data-category="electric">
+        <h2 class="category-title">Electric (EQ)</h2>
+        <div class="model-grid">
+            <div class="model-card" data-id="mercedes-eqb-2023">
+                <div class="model-year">2023</div>
+                <h3>EQB</h3>
+                <p>Electric compact SUV with optional seven seats</p>
+            </div>
+            <div class="model-card" data-id="mercedes-eqe-suv-2023">
+                <div class="model-year">2023</div>
+                <h3>EQE SUV</h3>
+                <p>Electric luxury SUV, up to 305 miles range</p>
+            </div>
+            <div class="model-card" data-id="mercedes-eqs-2024">
+                <div class="model-year">2024</div>
+                <h3>EQS</h3>
+                <p>Flagship electric sedan, up to 453 miles range</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="model-category" data-category="performance">
+        <h2 class="category-title">AMG Performance</h2>
+        <div class="model-grid">
+            <div class="model-card" data-id="mercedes-amg-c63-2023">
+                <div class="model-year">2023</div>
+                <h3>AMG C 63 S E Performance</h3>
+                <p>671 hp hybrid four-cylinder performance sedan</p>
+            </div>
+            <div class="model-card" data-id="mercedes-amg-e53-2024">
+                <div class="model-year">2024</div>
+                <h3>AMG E 53 Hybrid</h3>
+                <p>603 hp inline-six hybrid performance E-Class</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════ -->
+    <!--  VOLKSWAGEN                                -->
+    <!-- ══════════════════════════════════════════ -->
+
+    <div class="brand-divider">Volkswagen</div>
+
+    <section class="model-category" data-category="hatchback">
+        <h2 class="category-title">Hatchbacks</h2>
+        <div class="model-grid">
+            <div class="model-card" data-id="vw-polo-2023">
+                <div class="model-year">2023</div>
+                <h3>Polo</h3>
+                <p>Updated supermini with revised styling and new tech</p>
+            </div>
+            <div class="model-card" data-id="vw-golf-2023">
+                <div class="model-year">2023</div>
+                <h3>Golf</h3>
+                <p>Refreshed Mk8 with physical controls restored</p>
+            </div>
+            <div class="model-card" data-id="vw-golf-r-2023">
+                <div class="model-year">2023</div>
+                <h3>Golf R</h3>
+                <p>333 hp 4MOTION AWD performance flagship hatchback</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="model-category" data-category="estate">
+        <h2 class="category-title">Estates</h2>
+        <div class="model-grid">
+            <div class="model-card" data-id="vw-passat-2024">
+                <div class="model-year">2024</div>
+                <h3>Passat</h3>
+                <p>All-new estate-only generation with PHEV headline</p>
+            </div>
+            <div class="model-card" data-id="vw-arteon-2024">
+                <div class="model-year">2024</div>
+                <h3>Arteon</h3>
+                <p>Premium fastback and Shooting Brake estate</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="model-category" data-category="suv">
+        <h2 class="category-title">SUVs</h2>
+        <div class="model-grid">
+            <div class="model-card" data-id="vw-tiguan-2024">
+                <div class="model-year">2024</div>
+                <h3>Tiguan</h3>
+                <p>All-new third generation with PHEV and optional 7 seats</p>
+            </div>
+            <div class="model-card" data-id="vw-t-roc-2024">
+                <div class="model-year">2024</div>
+                <h3>T-Roc</h3>
+                <p>Updated compact crossover with sporty R variant</p>
+            </div>
+            <div class="model-card" data-id="vw-touareg-2024">
+                <div class="model-year">2024</div>
+                <h3>Touareg</h3>
+                <p>VW's flagship SUV with 15-inch Innovision Cockpit</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="model-category" data-category="electric">
+        <h2 class="category-title">Electric (ID. Series)</h2>
+        <div class="model-grid">
+            <div class="model-card" data-id="vw-id3-2023">
+                <div class="model-year">2023</div>
+                <h3>ID.3</h3>
+                <p>Facelifted electric hatchback, up to 347 miles range</p>
+            </div>
+            <div class="model-card" data-id="vw-id4-2023">
+                <div class="model-year">2023</div>
+                <h3>ID.4</h3>
+                <p>Bestselling electric SUV, up to 342 miles range</p>
+            </div>
+            <div class="model-card" data-id="vw-id7-2024">
+                <div class="model-year">2024</div>
+                <h3>ID.7</h3>
+                <p>Flagship electric sedan and Tourer estate</p>
+            </div>
+            <div class="model-card" data-id="vw-id-buzz-2024">
+                <div class="model-year">2024</div>
+                <h3>ID. Buzz</h3>
+                <p>Iconic electric Microbus reborn, 5 or 7 seats</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="model-category" data-category="performance">
+        <h2 class="category-title">Performance</h2>
+        <div class="model-grid">
+            <div class="model-card" data-id="vw-gti-mk8-5-2025">
+                <div class="model-year">2025</div>
+                <h3>Golf GTI</h3>
+                <p>Mk8.5 update with 265 hp and torque vectoring diff</p>
+            </div>
+            <div class="model-card" data-id="vw-golf-r-2025">
+                <div class="model-year">2025</div>
+                <h3>Golf R Mk8.5</h3>
+                <p>Updated AWD performance flagship with revised Drift mode</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="brand-divider">Volvo</div>
+
+    <section class="model-category" data-category="sedan">
+        <h2 class="category-title">Sedans</h2>
+        <div class="model-grid">
+            <div class="model-card" data-id="volvo-s60-2023">
+                <div class="model-year">2023</div>
+                <h3>S60</h3>
+                <p>Refined compact executive sedan with PHEV option</p>
+            </div>
+            <div class="model-card" data-id="volvo-s90-2024">
+                <div class="model-year">2024</div>
+                <h3>S90</h3>
+                <p>Flagship executive sedan, updated with Google infotainment</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="model-category" data-category="suv">
+        <h2 class="category-title">SUVs</h2>
+        <div class="model-grid">
+            <div class="model-card" data-id="volvo-xc40-2023">
+                <div class="model-year">2023</div>
+                <h3>XC40</h3>
+                <p>Entry-level SUV with mild hybrid, PHEV, and electric options</p>
+            </div>
+            <div class="model-card" data-id="volvo-xc60-2024">
+                <div class="model-year">2024</div>
+                <h3>XC60</h3>
+                <p>Volvo's best-selling SUV, updated with Google infotainment</p>
+            </div>
+            <div class="model-card" data-id="volvo-xc90-2025">
+                <div class="model-year">2025</div>
+                <h3>XC90</h3>
+                <p>All-new generation flagship, PHEV and electric only</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="model-category" data-category="electric">
+        <h2 class="category-title">Electric (EX Series)</h2>
+        <div class="model-grid">
+            <div class="model-card" data-id="volvo-ex30-2024">
+                <div class="model-year">2024</div>
+                <h3>EX30</h3>
+                <p>Volvo's smallest EV, up to 298 miles range</p>
+            </div>
+            <div class="model-card" data-id="volvo-ex40-2024">
+                <div class="model-year">2024</div>
+                <h3>EX40</h3>
+                <p>Electric XC40, up to 335 miles range</p>
+            </div>
+            <div class="model-card" data-id="volvo-c40-2024">
+                <div class="model-year">2024</div>
+                <h3>C40 Recharge</h3>
+                <p>Coupe-SUV sibling of the EX40, up to 335 miles range</p>
+            </div>
+            <div class="model-card" data-id="volvo-ex90-2025">
+                <div class="model-year">2025</div>
+                <h3>EX90</h3>
+                <p>Flagship electric SUV with LiDAR, up to 380 miles range</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="model-category" data-category="performance">
+        <h2 class="category-title">Recharge Performance</h2>
+        <div class="model-grid">
+            <div class="model-card" data-id="volvo-s60-recharge-2023">
+                <div class="model-year">2023</div>
+                <h3>S60 Recharge T8</h3>
+                <p>455 hp PHEV performance sedan, 0-62 in 4.4 seconds</p>
+            </div>
+            <div class="model-card" data-id="volvo-xc60-recharge-2024">
+                <div class="model-year">2024</div>
+                <h3>XC60 Recharge T8</h3>
+                <p>455 hp PHEV performance SUV, 0-62 in 4.9 seconds</p>
+            </div>
+        </div>
+    </section>
+</main>
+
 <script src="main.js"></script>
-</body>
-</html>
+<script src="cardata.js"></script>
+<script src="models.js"></script>
+
 </body>
 </html>
