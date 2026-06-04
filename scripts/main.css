@@ -586,11 +586,7 @@ nav a.active::after {
         transform: translateX(0);
     }
 }
-.hero-content,
-.hero-images {
-    transition: filter 0.05s linear, opacity 0.05s linear, transform 0.05s linear;
-    will-change: filter, opacity, transform;
-}
+
 /* ── Responsive ── */
 @media (max-width: 1024px) {
     .brands-grid {
