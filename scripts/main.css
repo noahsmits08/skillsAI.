@@ -19,17 +19,6 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-/* ── Top bar ── */
-.top-bar {
-    background: var(--accent);
-    text-align: center;
-    padding: 5px 2rem;
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 0.75rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: #fff;
-}
 
 /* ── Header ── */
 header {
@@ -549,7 +538,59 @@ nav a.active::after {
     color: #444;
     letter-spacing: 0.05em;
 }
+/* ── Hero image animations ── */
+.slide-from-left {
+    opacity: 0;
+    filter: blur(12px);
+    transform: translateX(-80px);
+    animation: slideInLeft 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation-delay: 0.2s;
+}
 
+.slide-from-right {
+    opacity: 0;
+    filter: blur(12px);
+    transform: translateX(80px);
+    animation: slideInRight 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        filter: blur(12px);
+        transform: translateX(-80px);
+    }
+    60% {
+        filter: blur(2px);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        filter: blur(12px);
+        transform: translateX(80px);
+    }
+    60% {
+        filter: blur(2px);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+}
+.hero-content,
+.hero-images {
+    transition: filter 0.05s linear, opacity 0.05s linear, transform 0.05s linear;
+    will-change: filter, opacity, transform;
+}
 /* ── Responsive ── */
 @media (max-width: 1024px) {
     .brands-grid {
