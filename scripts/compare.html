@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Compare — CarDetails</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="compare.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="header-inner">
+        <div class="logo">
+            <div class="logo-emblem"><span>CD</span></div>
+            <div class="logo-text">
+                <span class="brand">CarDetails</span>
+                <span class="tagline">Performance · Precision · Power</span>
+            </div>
+        </div>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="models.html">Models</a>
+            <a href="compare.html" class="active">Compare</a>
+            <a href="specs.html">Specs</a>
+            <a href="#">About</a>
+        </nav>
+        <div class="header-actions">
+            <button class="cta-btn">View Cars</button>
+        </div>
+    </div>
+</header>
+
+<main class="compare-page">
+
+    <div class="compare-hero">
+        <h1>Compare <span>Models</span></h1>
+        <p>Select up to 3 cars to compare side by side</p>
+    </div>
+
+    <!-- Car selectors -->
+    <div class="compare-selectors">
+        <div class="selector-slot" data-slot="0">
+            <div class="slot-label">Car 1</div>
+            <div class="slot-controls">
+                <select class="brand-select" id="brand-0">
+                    <option value="">Select Brand</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Audi">Audi</option>
+                    <option value="Mercedes-Benz">Mercedes-Benz</option>
+                    <option value="Volkswagen">Volkswagen</option>
+                    <option value="Volvo">Volvo</option>
+                </select>
+                <select class="model-select" id="model-0" disabled>
+                    <option value="">Select Model</option>
+                </select>
+            </div>
+            <div class="slot-preview" id="preview-0">
+                <div class="slot-empty">
+                    <span class="slot-plus">+</span>
+                    <span>Choose a car</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="selector-divider">VS</div>
+
+        <div class="selector-slot" data-slot="1">
+            <div class="slot-label">Car 2</div>
+            <div class="slot-controls">
+                <select class="brand-select" id="brand-1">
+                    <option value="">Select Brand</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Audi">Audi</option>
+                    <option value="Mercedes-Benz">Mercedes-Benz</option>
+                    <option value="Volkswagen">Volkswagen</option>
+                    <option value="Volvo">Volvo</option>
+                </select>
+                <select class="model-select" id="model-1" disabled>
+                    <option value="">Select Model</option>
+                </select>
+            </div>
+            <div class="slot-preview" id="preview-1">
+                <div class="slot-empty">
+                    <span class="slot-plus">+</span>
+                    <span>Choose a car</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="selector-divider">VS</div>
+
+        <div class="selector-slot" data-slot="2">
+            <div class="slot-label">Car 3 <span class="optional">(optional)</span></div>
+            <div class="slot-controls">
+                <select class="brand-select" id="brand-2">
+                    <option value="">Select Brand</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Audi">Audi</option>
+                    <option value="Mercedes-Benz">Mercedes-Benz</option>
+                    <option value="Volkswagen">Volkswagen</option>
+                    <option value="Volvo">Volvo</option>
+                </select>
+                <select class="model-select" id="model-2" disabled>
+                    <option value="">Select Model</option>
+                </select>
+            </div>
+            <div class="slot-preview" id="preview-2">
+                <div class="slot-empty">
+                    <span class="slot-plus">+</span>
+                    <span>Choose a car</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Compare button -->
+    <div class="compare-action">
+        <button class="compare-btn" id="compare-btn" disabled>Compare Cars</button>
+        <button class="reset-btn" id="reset-btn">Reset</button>
+    </div>
+
+    <!-- Results -->
+    <div class="compare-results" id="compare-results" style="display:none;">
+
+        <div class="results-header">
+            <h2>Comparison <span>Results</span></h2>
+        </div>
+
+        <div class="compare-grid" id="compare-grid">
+            <!-- Built by JS -->
+        </div>
+
+        <div class="compare-table-wrapper">
+            <table class="compare-table" id="compare-table">
+                <!-- Built by JS -->
+            </table>
+        </div>
+
+    </div>
+
+</main>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <span class="footer-logo">CAR<strong>DETAILS</strong></span>
+        <span class="footer-copy">© 2026 CarDetails. All rights reserved.</span>
+    </div>
+</footer>
+
+<script src="cardata.js"></script>
+<script src="specsdata.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>

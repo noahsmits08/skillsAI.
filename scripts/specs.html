@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Specs — CarDetails</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="specs.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="header-inner">
+        <div class="logo">
+            <div class="logo-emblem"><span>CD</span></div>
+            <div class="logo-text">
+                <span class="brand">CarDetails</span>
+                <span class="tagline">Performance · Precision · Power</span>
+            </div>
+        </div>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="models.html">Models</a>
+            <a href="compare.html">Compare</a>
+            <a href="specs.html" class="active">Specs</a>
+            <a href="#">About</a>
+        </nav>
+        <div class="header-actions">
+            <button class="cta-btn">View Cars</button>
+        </div>
+    </div>
+</header>
+
+<main class="specs-page">
+
+    <div class="specs-hero">
+        <h1>Full Specs <span>2022 – 2026</span></h1>
+        <p>Detailed specifications for every model across all five manufacturers</p>
+    </div>
+
+    <!-- Search + filters -->
+    <div class="specs-controls">
+        <input type="text" id="specs-search" class="specs-search" placeholder="Search model, brand or year…">
+        <div class="specs-filters">
+            <button class="specs-filter-btn active" data-brand="all">All Brands</button>
+            <button class="specs-filter-btn" data-brand="BMW">BMW</button>
+            <button class="specs-filter-btn" data-brand="Audi">Audi</button>
+            <button class="specs-filter-btn" data-brand="Mercedes-Benz">Mercedes-Benz</button>
+            <button class="specs-filter-btn" data-brand="Volkswagen">Volkswagen</button>
+            <button class="specs-filter-btn" data-brand="Volvo">Volvo</button>
+        </div>
+    </div>
+
+    <div class="specs-table-wrapper">
+        <table class="specs-table" id="specs-table">
+            <thead>
+            <tr>
+                <th class="col-brand">Brand</th>
+                <th class="col-model">Model</th>
+                <th class="col-year">Year</th>
+                <th class="col-category">Category</th>
+                <th class="col-engine">Engine / Powertrain</th>
+                <th class="col-power">Power</th>
+                <th class="col-drive">Drive</th>
+                <th class="col-acceleration">0–100 km/h</th>
+                <th class="col-range">EV Range</th>
+            </tr>
+            </thead>
+            <tbody id="specs-tbody">
+            </tbody>
+        </table>
+        <div class="specs-empty" id="specs-empty" style="display:none;">
+            No models match your search.
+        </div>
+    </div>
+
+</main>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <span class="footer-logo">CAR<strong>DETAILS</strong></span>
+        <span class="footer-copy">© 2026 CarDetails. All rights reserved.</span>
+    </div>
+</footer>
+
+<script src="cardata.js"></script>
+<script src="specsdata.js"></script>
+<script src="specs.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>

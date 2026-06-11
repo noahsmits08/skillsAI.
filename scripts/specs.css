@@ -1,0 +1,247 @@
+.specs-page {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 3rem 2.5rem;
+}
+
+/* ── Hero ── */
+.specs-hero {
+    margin-bottom: 2.5rem;
+}
+
+.specs-hero h1 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #f0ede8;
+}
+
+.specs-hero h1 span {
+    color: #c0392b;
+}
+
+.specs-hero p {
+    color: #888;
+    font-size: 0.95rem;
+    margin-top: 0.4rem;
+    letter-spacing: 0.05em;
+}
+
+/* ── Controls ── */
+.specs-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.specs-search {
+    background: #141414;
+    border: 1px solid #2a2a2a;
+    color: #f0ede8;
+    padding: 0.75rem 1.25rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.875rem;
+    width: 100%;
+    max-width: 420px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.specs-search::placeholder {
+    color: #555;
+}
+
+.specs-search:focus {
+    border-color: #c0392b;
+}
+
+.specs-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.specs-filter-btn {
+    background: transparent;
+    border: 1.5px solid #2a2a2a;
+    color: #888;
+    padding: 0.4rem 1.1rem;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s;
+    clip-path: polygon(6px 0%, 100% 0%, calc(100% - 6px) 100%, 0% 100%);
+}
+
+.specs-filter-btn:hover {
+    border-color: #c0392b;
+    color: #fff;
+}
+
+.specs-filter-btn.active {
+    background: #c0392b;
+    border-color: #c0392b;
+    color: #fff;
+}
+
+/* ── Table wrapper ── */
+.specs-table-wrapper {
+    overflow-x: auto;
+    border: 1px solid #1e1e1e;
+}
+
+/* ── Table ── */
+.specs-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.82rem;
+    min-width: 900px;
+}
+
+.specs-table thead {
+    background: #0d0d0d;
+    border-bottom: 2px solid #c0392b;
+}
+
+.specs-table thead th {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #888;
+    padding: 0.9rem 1rem;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.specs-table tbody tr {
+    border-bottom: 1px solid #1a1a1a;
+    transition: background 0.15s;
+    cursor: pointer;
+}
+
+.specs-table tbody tr:hover {
+    background: #161616;
+}
+
+.specs-table tbody tr:hover .model-link {
+    color: #c0392b;
+}
+
+.specs-table tbody td {
+    padding: 0.85rem 1rem;
+    color: #bbb;
+    vertical-align: middle;
+    line-height: 1.4;
+}
+
+/* ── Column widths ── */
+.col-brand     { width: 130px; }
+.col-model     { width: 160px; }
+.col-year      { width: 60px; }
+.col-category  { width: 110px; }
+.col-engine    { width: 220px; }
+.col-power     { width: 100px; }
+.col-drive     { width: 130px; }
+.col-acceleration { width: 80px; }
+.col-range     { width: 90px; }
+
+/* ── Brand badge ── */
+.brand-badge {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.5rem;
+    border: 1px solid #2a2a2a;
+    color: #ccc;
+    white-space: nowrap;
+}
+
+.brand-bmw           { border-color: #1c69d4; color: #5b9bd5; }
+.brand-audi          { border-color: #888; color: #aaa; }
+.brand-mercedesbenz  { border-color: #888; color: #bbb; }
+.brand-volkswagen    { border-color: #1e88c7; color: #5ba8d4; }
+.brand-volvo         { border-color: #1b5ea6; color: #5b8ec7; }
+
+/* ── Model link ── */
+.model-link {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #f0ede8;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+/* ── Category tag ── */
+.category-tag {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #888;
+}
+
+/* ── EV range highlight ── */
+.has-range {
+    color: #5bbf7a;
+    font-weight: 600;
+}
+
+/* ── Year column ── */
+.col-year {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    color: #c0392b;
+    font-size: 0.85rem;
+}
+
+/* ── Empty state ── */
+.specs-empty {
+    padding: 3rem;
+    text-align: center;
+    color: #555;
+    font-size: 0.9rem;
+    font-family: 'Rajdhani', sans-serif;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+/* ── Scrollbar styling ── */
+.specs-table-wrapper::-webkit-scrollbar {
+    height: 4px;
+}
+
+.specs-table-wrapper::-webkit-scrollbar-track {
+    background: #111;
+}
+
+.specs-table-wrapper::-webkit-scrollbar-thumb {
+    background: #c0392b;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+    .specs-page {
+        padding: 2rem 1rem;
+    }
+
+    .specs-hero h1 {
+        font-size: 2rem;
+    }
+
+    .specs-search {
+        max-width: 100%;
+    }
+}
