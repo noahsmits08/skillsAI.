@@ -180,3 +180,26 @@
         object-fit: cover;
         object-position: center;
     }
+    /* Keeps the container element clean and structured */
+    .model-card {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        background-color: #121212;
+        border: 1px solid #1f1f1f;
+        border-radius: 8px;
+    }
+
+    /* Creates a perfect frame area for the placeholder link */
+    .card-image-wrapper {
+        width: 100%;
+        height: 180px;
+        overflow: hidden;
+    }
+
+    /* Ensures the generated layout image fits perfectly inside the card frame */
+    .catalog-car-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
