@@ -645,3 +645,35 @@ nav a.active::after {
         grid-template-columns: 1fr 1fr;
     }
 }
+header {
+    position: sticky;
+    top: 0;
+    z-index: 9999 !important; /* Forces header to the very top layer */
+}
+
+.header-actions, .cta-btn {
+    position: relative;
+    z-index: 10000 !important;
+    pointer-events: auto !important; /* Ensures the browser registers mouse clicks */
+}
+.cta-btn {
+    display: inline-block; /* Crucial for clip-paths on <a> tags */
+    text-align: center;
+    vertical-align: middle;
+}
+.cta-btn {
+    text-decoration: none; /* 🧠 THIS REMOVES THE UNDERLINE LINE */
+    background: transparent;
+    color: var(--accent);
+    border: 1.5px solid var(--accent);
+    padding: 0.45rem 1.3rem;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    cursor: pointer;
+    clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+    transition: background 0.2s, color 0.2s;
+    display: inline-block; /* Keeps the clip-path rigid and beautifully spaced */
+}

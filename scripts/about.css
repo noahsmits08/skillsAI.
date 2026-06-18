@@ -1,0 +1,201 @@
+/* ════════════════════════════════════════════
+   ABOUT PAGE EXCLUSIVE DESIGN SYSTEM
+   ════════════════════════════════════════════ */
+
+.about-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+/* ── 1. ASYMMETRIC HERO DECK ── */
+.about-hero-deck {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 4rem;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.about-hero-left h1 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    line-height: 0.95;
+    margin-bottom: 1.5rem;
+    color: var(--text);
+}
+
+.about-hero-left h1 span {
+    color: var(--accent);
+}
+
+.about-hero-left p {
+    color: var(--muted);
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+/* Single premium polygon frame for image presentation */
+.about-media-frame {
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+    border: 1px solid #1e1e1e;
+    clip-path: polygon(30px 0%, 100% 0%, 100% calc(100% - 30px), 0% 100%);
+}
+
+.about-media-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ── 2. DYNAMIC PHILOSOPHY ROW ── */
+.about-philosophy-deck {
+    background: var(--surface);
+    border: 1px solid #1e1e1e;
+    padding: 4rem 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px));
+}
+
+.philosophy-text-panel h3 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--text);
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.philosophy-text-panel p {
+    color: var(--muted);
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+.philosophy-text-panel p strong {
+    color: var(--text);
+}
+
+/* Telemetry stat blocks panel style */
+.philosophy-stats-panel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+}
+
+.about-stat-panel-card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    padding: 1.8rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    border-radius: 4px;
+    border-left: 3px solid var(--accent);
+}
+
+.panel-num {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1;
+}
+
+.panel-lbl {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+/* ── 3. VERTICAL PILLARS DECK ── */
+.text-center {
+    text-align: center;
+}
+
+.text-center-title {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--text);
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+}
+
+.architecture-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.arch-card {
+    background: var(--surface);
+    border: 1px solid #1e1e1e;
+    padding: 3rem 2rem;
+    transition: border-color 0.25s, transform 0.25s;
+    clip-path: polygon(15px 0%, 100% 0%, 100% calc(100% - 15px), 0% 100%);
+}
+
+.arch-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-5px);
+}
+
+.arch-icon {
+    font-size: 1.75rem;
+    color: var(--accent);
+    margin-bottom: 1.25rem;
+}
+
+.arch-card h3 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text);
+    margin-bottom: 0.85rem;
+}
+
+.arch-card p {
+    font-size: 0.85rem;
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+/* ── RESPONSIVE OVERRIDES ── */
+@media (max-width: 900px) {
+    .about-page {
+        gap: 4rem;
+    }
+    .about-hero-deck,
+    .about-philosophy-deck,
+    .architecture-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+    .about-media-frame {
+        height: 280px;
+    }
+    .about-hero-left h1 {
+        font-size: 3rem;
+    }
+}
